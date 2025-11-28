@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+.service-title {
+    background: linear-gradient(to right, rgba(255, 234, 0, 1), rgba(255, 255, 91, 1));
+    background-clip: text;
+    color: transparent;
+}
+.service-title {
+    @apply font-bold text-[2.3em] py-6
+}
+.service-desc {
+    @apply text-[rgba(255,255,255,0.42)] font-normal w-[400px]
+}
+.service-card {
+    @apply w-[300px] h-[170px] rounded-[8px] p-5 hover:bg-[rgba(255,243,110,0.1)] duration-500
+    hover:transform hover:translate-y-[-10px]
+}
+.slogan {
+    background: linear-gradient(to right, rgba(255, 234, 0, 1), rgba(255, 255, 91, 1));
+    background-clip: text;
+    color: transparent;    
+}
+.slogan {
+    @apply font-semibold w-[80%] mx-auto text-[1.6em] text-center
+}

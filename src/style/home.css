@@ -1,0 +1,50 @@
+@import 'tailwindcss';    
+
+.home-sec {
+    @apply py-2
+}
+
+.title {
+    @apply text-center font-semibold text-[1.8em] w-fit mx-auto mb-10
+}
+.title {
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 70%;
+        bottom: -7px;
+        left: 50%;
+        border-radius: 30px;
+        transform: translateX(-50%);
+        height: 3px;
+        background-color: rgba(255, 255, 255, 0.74);
+    }
+}
+.main-title {
+    @apply py-4! text-center font-bold text-[4em] mt-8
+}
+.main-title {
+    background: linear-gradient(to right, rgba(255, 234, 0, 1), rgba(255, 255, 91, 1));
+    background-clip: text;
+    color: transparent;    
+}
+.sub-title {
+    @apply w-[530px] text-[rgba(255,255,255,0.42)] mx-auto text-center text-[1.2em]
+}
+.supported-container {
+    @apply pt-10  mt-10
+}
+.supported-text {
+    width: fit-content;
+    position: relative;
+    &::before {
+        bottom: -6px;
+        content: "";
+        position: absolute;
+        width: 70%;
+        border-radius: 30px;
+        height: 2.5px;        
+        background: linear-gradient(to right, rgba(255, 234, 0, 1), rgba(255, 255, 91, 1));
+    }
+}

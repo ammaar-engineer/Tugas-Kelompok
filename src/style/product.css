@@ -1,0 +1,83 @@
+.showcase-text {
+    background: linear-gradient(to right, rgba(255, 234, 0, 1), rgba(255, 255, 91, 1));
+    background-clip: text;
+    color: transparent;
+}
+.startpage {
+    @apply flex flex-col justify-center items-center gap-1 text-[1.7em] shrink-0
+}
+.showcase-text {
+    @apply font-semibold text-[2em]
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: url('../../public/ovrly.png');
+    background-size: cover;
+    background-position: center;
+}
+.firstpage {
+    background: url('../../public/k1.jpg');
+    background-size: 130%;
+    background-position: center;
+}
+.secondpage {    
+    background: url('../../public/p1.jpg');
+    background-size: 130%;
+    background-position: center;
+}
+.thridpage {    
+    background: url('../../public/m1.jpg');
+    background-size: 130%;
+    background-position: center;
+}
+.secretpage {
+    background: url('../../public/f.jpg');
+    background-size: 130%;
+    background-position: center;
+}
+.warpage {
+    background: url('../../public/t.jpg');
+    background-size: 130%;
+    background-position: center;
+}
+.cover {
+    background-size: 100%;
+}
+.cartype {    
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(153, 153, 153, 1));
+    background-clip: text;
+    color: transparent;
+}
+.cartype {
+    @apply font-semibold text-[1.8em]
+}
+.company {
+    background: linear-gradient(to right, rgba(255, 234, 0, 1), rgba(255, 255, 91, 1));
+    background-clip: text;
+    color: transparent;
+}
+.gradient {
+    background: linear-gradient(to right, rgba(255, 234, 0, 1), rgba(255, 255, 91, 1));
+    background-clip: text;
+    color: transparent;
+}
+.company {
+    @apply text-[2.5em] font-bold
+}
+.desc {
+    @apply font-semibold text-[1.3em] hover:bg-[rgba(0,0,0,0.23)] p-4 rounded-lg duration-200
+}
+.subdesc {
+    @apply font-medium text-white text-[0.7em] w-140
+}
+.specs {
+    @apply p-4
+}
+.spec {
+    @apply text-[1.3em] font-semibold text-end
+}
+.spec-bubble {
+    @apply bg-[rgba(0,0,0,0.23)] py-1 px-9 rounded-full text-white text-center
+    hover:bg-[rgba(20,20,20,20.23)] duration-200
+}

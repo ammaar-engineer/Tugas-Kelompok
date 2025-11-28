@@ -1,0 +1,71 @@
+@import "tailwindcss";
+@import './style/home.css';
+@import './style/services.css';
+@import './style/product.css';
+@import './animation/services.css';
+
+body {
+    margin: 0;
+    padding: 0;
+}    
+* {
+    margin: 0;
+    transition: all 500ms;
+    scrollbar-width: none;
+}
+#root {
+    padding: 0;
+    margin: 0;    
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-padding {
+    @apply w-[1120px] mx-auto snap-center
+}
+
+
+
+/* Animation */
+.showIn {
+    opacity: 1;
+    animation: showInAnim 3s;
+}
+@keyframes showInAnim {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.slideDown {
+    transform: translateY(0);
+    opacity: 1;
+    animation: slideDownAnim 3s;
+}
+@keyframes slideDownAnim {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
+.slideUp {
+    transform: translateY(0);
+    opacity: 1;
+    animation: slideUpAnim 3s;
+}
+@keyframes slideUpAnim {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
